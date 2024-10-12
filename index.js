@@ -10,3 +10,15 @@ var imageSource1 = "images/"+randomDiceImage1;
 // var imageSource2 = "images/dice"+randomNumber2+".png";
 var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src",imageSource1);
+
+
+// Changing the heading 
+if (randomNumber1> randomNumber2) {
+    document.querySelector("h1").innerHTML ="Player one wins";
+}
+else if(randomNumber2> randomNumber1){
+    document.querySelector("h1").innnerHTML ="Player two wins";
+}
+else {
+    document.querySelector("h1").innerHTML ="It's a tie" ;
+}
